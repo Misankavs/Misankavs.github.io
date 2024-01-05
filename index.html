@@ -5,20 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shop</title>
+    <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    #main {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        color: #333;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px 0;
+    }
+
+    p {
+        color: #666;
+        line-height: 1.6;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    #form {
+        margin-top: 20px;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+</style>
 </head>
 <body style="font-family: 'Arial', sans-serif; background-color: #f4f4f4; margin: 0; padding: 0;">
 
     <div id="main" style="max-width: 800px; margin: 20px auto; background-color: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
-        <h1 style="color: #333; text-align: center;">Online Shop</h1>
-        <img src="pizza.png" alt="Pizza Image" style="max-width: 70%; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
-        <p style="color: #555; text-align: justify; margin-top: 15px;">Text example text example text example text example text example text example.</p>
-        <button id="buy" style="display: block; margin: 15px auto; padding: 10px 20px; font-size: 16px; background-color: #3498db; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Купить</button>
+        <h1>Online Shop</h1>
+        <img src="pizza.png" alt="Pizza Image">
+        <p>Text example text example text example text example text example text example.</p>
+        <button id="buy" >Купить</button>
     </div>
         <form id="form">
             <input type="text" placeholder="Name" id="user_name">
             <input type="text" placeholder="email" id="user_email">
             <input type="text" placeholder="phone number" id="user_number">
         </form>
-
 </body>
 </html>
