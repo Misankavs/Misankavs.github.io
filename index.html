@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shop</title>
-    <style>
-    body {
-        font-family: 'Arial', sans-serif;
-        background-color: #f4f4f4;
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap');
+
+    * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        color: var(--tg-theme-text-colour);
+        background: var(--tg-theme-bg-colour);
     }
 
     #main {
-        max-width: 800px;
-        margin: 20px auto;
-        background-color: #fff;
+        width: 100%;
         padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
     }
 
     h1 {
@@ -28,7 +35,7 @@
     }
 
     img {
-        max-width: 100%;
+        max-width: 45%;
         height: auto;
         display: block;
         margin: 20px 0;
@@ -66,10 +73,11 @@
         border-radius: 5px;
     }
 </style>
+
 </head>
 <body>
 
-    <div>
+    <div id="main">
         <h1>Online Shop</h1>
         <img src="pizza.png" alt="Pizza Image">
         <p>Text example text example text example text example text example text example.</p>
@@ -80,5 +88,8 @@
             <input type="text" placeholder="email" id="user_email">
             <input type="text" placeholder="phone number" id="user_number">
         </form>
+ 
+
+
 </body>
 </html>
