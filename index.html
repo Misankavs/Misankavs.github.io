@@ -6,80 +6,91 @@
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Online Shop</title>
-    body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        margin: 0;
-    }
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap');
 
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    * {
-        box-sizing: border-box;
-    }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
+            color: var(--tg-theme-text-color);
+            background: var(--tg-theme-bg-color);
+        }
 
-    body {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 200;
-        color: var(--tg-theme-text-color);
-        background: var(--tg-theme-bg-color);
-    }
+        #main {
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+            margin: 0 auto; /* Центрирование блока #main */
+        }
 
-    #main {
-        width: 80%;
-        padding: 20px;
-        text-align: center;
-    }
+        h1 {
+            margin-top: 50px;
+            margin-bottom: 10px;
+        }
 
-    h1 {
-        margin-top: 50px;
-        margin-bottom: 10px;
-    }
+        img {
+            width: 70px;
+            margin: 30px auto;
+            display: block; /* Центрирование изображения */
+        }
 
-    img {
-        width: 70px;
-        margin: 30px auto;
-    }
+        p {
+            width: 350px;
+            margin: 0 auto;
+        }
 
-    p {
-        width: 350px;
-        margin: 0 auto;
-    }
+        button {
+            border: 0;
+            border-radius: 5px;
+            margin-top: 50px;
+            height: 60px;
+            width: 200px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 50ms ease;
+            color: var(--tg-theme-button-color);
+            background: var(--tg-theme-button-text-color);
+        }
 
-    button {
-        border: 0;
-        border-radius: 5px;
-        margin-top: 50px;
-        height: 60px;
-        width: 200px;
-        font-size: 20px;
-        cursor: pointer;
-        transition: all 50ms ease;
-        color: var(--tg-theme-button-color);
-        background: var(--tg-theme-button-text-color);
-    }
+        button:hover {
+            background: var(--tg-theme-secondary-bg-color);
+        }
+        
+        
+        #form {
+            text-align: center;
+            margin-top: 20px;
+        }
 
-    button:hover {
-        background: var(--tg-theme-secondary-bg-color)
-    }
-</style>
+        #form input {
+            margin: 10px;
+            padding: 5px;
+            width: 200px;
+        }
+    </style>
 </head>
-
-    <form id="form">
-     <input type="text" placeholder="Имя" id="user_name">
-     <input type="text" placeholder="Email" id="user_email">
-     <input type="text" placeholder="Телефон" id="user_phone">
-    </form>>
 <body>
 
     <div id="main">
         <h1>Online Shop</h1>
         <img src="pizza.png" alt="Pizza Image">
         <p>Text example text example text example text example text example text example.</p>
-        <button id="buy" >Купить</button>
+        <button id="buy">Купить</button>
+
+
+        <form id="form">
+            <input type="text" placeholder="Имя" id="user_name">
+            <input type="text" placeholder="Email" id="user_email">
+            <input type="text" placeholder="Телефон" id="user_phone">
+        </form>
     </div>
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </body>
 </html>
